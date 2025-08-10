@@ -1,5 +1,19 @@
-<header>
-    
-    <h1 class="text-center">EG-v3</h1>
+<header class="d-flex align-items-center shadow_header py-2">
+
+  <h1 class="display-4">
+    Economy Game
+  </h1>
+
+  <div class="col"></div>
+  
+  <button *ngIf="isLoggedIn" (click)="logout()" class="d-flex flex-column btn btn-primary border-0 bg-transparent">
+    <i class="bi bi-person-circle mt-2 px-3" style="font-size: 30px;"></i>
+    <small class="text-secondary">Logout</small>
+  </button>
+
+  <button *ngIf="!isLoggedIn" (click)="login()" class="d-flex flex-column border-0 bg-transparent">
+    <i class="bi bi-person-circle mt-2 px-3 disabled" style="font-size: 30px;"></i>
+    <small class="text-white">Login</small>
+  </button>
 
 </header>

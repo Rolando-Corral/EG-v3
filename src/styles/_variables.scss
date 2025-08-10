@@ -5,43 +5,51 @@
 // Descripción: Base de colores, tipografía, bordes y sombras.
 // ============================
 
-// ====== 1. Colores base ======
-$color-primary: #25a0b1;                  // Bordes, textos y sombras
-$color-background: rgb(15, 15, 15);       // Fondo principal
-$color-white: #ffffff;
-$color-black: #000000;
-$color-blue: #1976d2;                     // Azul corporativo
-$color-green: #4caf50;                    // Éxito / Afirmativo
-$color-red: #f44336;                      // Error / Advertencia
+// BACKGROUNDS
+$hitech-bg-dark: #343a40;
 
-// ====== 2. Paleta derivada ======
-$color-primary-light: lighten($color-primary, 15%);
-$color-primary-dark: darken($color-primary, 15%);
-$color-text-primary: $color-white;
-$color-text-secondary: rgba($color-white, 0.7);
+// TEXT COLORS
+$hitech-text: #25a0b1;
 
-// ====== 3. Tipografía ======
-$font-family-base: 'Roboto', 'Segoe UI', sans-serif;
-$font-size-base: 16px;
-$font-size-sm: 14px;
-$font-size-lg: 18px;
-$line-height-base: 1.5;
+// SHADOWS
+$hitech-shadow: 0px 0px 5px #25a0b1;
 
-// ====== 4. Bordes ======
-$border-radius-sm: 4px;
-$border-radius-md: 8px;
-$border-radius-lg: 16px;
-$border-color-primary: $color-primary;
-$border-color-light: rgba($color-white, 0.2);
+// BORDER
+$hitech-border: 1px solid #25a0b1;
 
-// ====== 5. Sombras ======
-$shadow-sm: 0 1px 3px rgba($color-primary, 0.2);
-$shadow-md: 0 3px 6px rgba($color-primary, 0.3);
-$shadow-lg: 0 10px 20px rgba($color-primary, 0.4);
+// BORDER RADIUS
+$hitech-border-radius: 5px;
 
-// ====== 6. Espaciado (Spacing) ======
-$spacing-xs: 4px;
-$spacing-sm: 8px;
-$spacing-md: 16px;
-$spacing-lg: 24px;
-$spacing-xl: 32px;
+// TRANSITION
+$hitech-transition: all 0.3s ease-in-out;
+
+// ICONS
+$hitech-icon: #25a0b1;
+
+
+/////////////
+/// ALIAS ///
+/////////////
+
+:root {
+  // BACKGROUNDS
+  --hitech-bg-dark: #{$hitech-bg-dark};
+
+  // TEXT COLORS
+  --hitech-text: #{$hitech-text};
+  
+  // SHADOWS
+  --hitech-shadow: #{$hitech-shadow};
+  
+  // BORDER
+  --hitech-border: #{$hitech-border};
+  
+  // BORDER RADIUS
+  --hitech-border-radius: #{$hitech-border-radius};
+  
+  // TRANSITION
+  --hitech-transition: #{$hitech-transition};
+  
+  // ICONS
+  --hitech-icon: #{$hitech-icon};
+}
