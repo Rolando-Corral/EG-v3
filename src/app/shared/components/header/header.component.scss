@@ -1,6 +1,8 @@
+@import '../../../../styles/variables';
+
 header{
-    border-bottom : 1px solid #25a0b1;
+    border-bottom : 1px solid var(--hitech-border);
     padding : 10px;
-    box-shadow: 0px 0px 5px #25a0b1;
-    text-shadow: 0px 0px 5px #25a0b1;
+    box-shadow:  var(--hitech-shadow);
+    text-shadow: var(--hitech-shadow);
 }

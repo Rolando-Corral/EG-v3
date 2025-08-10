@@ -1,0 +1,14 @@
+
+@import '../../../../styles/variables';
+
+i{
+    font-size: 30px;
+    color: var(--hitech-icon);
+    text-shadow: var(--hitech-shadow);
+
+    &.disabled{
+        color: var(--hitech-disabled);
+        text-shadow: none;
+
+    }
+}
