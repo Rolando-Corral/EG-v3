@@ -6,14 +6,6 @@
 
   <div class="col"></div>
   
-  <button *ngIf="isLoggedIn" (click)="logout()" class="d-flex flex-column btn btn-primary border-0 bg-transparent">
-    <i class="bi bi-person-circle mt-2 px-3" style="font-size: 30px;"></i>
-    <small class="text-secondary">Logout</small>
-  </button>
-
-  <button *ngIf="!isLoggedIn" (click)="login()" class="d-flex flex-column border-0 bg-transparent">
-    <i class="bi bi-person-circle mt-2 px-3 disabled" style="font-size: 30px;"></i>
-    <small class="text-white">Login</small>
-  </button>
+ <shared-logger-button [isLoggedIn]="isLoggedIn"></shared-logger-button>
 
 </header>

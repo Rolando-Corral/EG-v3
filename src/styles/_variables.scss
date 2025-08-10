@@ -6,16 +6,16 @@
 // ============================
 
 // BACKGROUNDS
-$hitech-bg-dark: #343a40;
+$hitech-bg-dark: #101010;
 
 // TEXT COLORS
-$hitech-text: #25a0b1;
+$hitech-text: #02aefd;
 
 // SHADOWS
-$hitech-shadow: 0px 0px 5px #25a0b1;
+$hitech-shadow: 0px 0px 13px #0be1fd;
 
 // BORDER
-$hitech-border: 1px solid #25a0b1;
+$hitech-border: 1px solid #2de4fc;
 
 // BORDER RADIUS
 $hitech-border-radius: 5px;
@@ -24,8 +24,10 @@ $hitech-border-radius: 5px;
 $hitech-transition: all 0.3s ease-in-out;
 
 // ICONS
-$hitech-icon: #25a0b1;
+$hitech-icon: #02aefd;
 
+// STATUS
+$hitech-disabled: #686c6d;
 
 /////////////
 /// ALIAS ///
@@ -52,4 +54,7 @@ $hitech-icon: #25a0b1;
   
   // ICONS
   --hitech-icon: #{$hitech-icon};
+
+  // STATUS
+  --hitech-disabled: #{$hitech-disabled};
 }

@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { SharedRoutingModule } from './shared-routing.module';
 import { HeaderComponent } from './components/header/header.component';
+import { LoggerButtonComponent } from './components/logger-button/logger-button.component';
 
 
 @NgModule({
   declarations: [
-    HeaderComponent
+    HeaderComponent,
+    LoggerButtonComponent
   ],
   imports: [
     CommonModule,

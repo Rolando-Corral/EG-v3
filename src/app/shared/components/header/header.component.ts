@@ -7,17 +7,6 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  public isLoggedIn: boolean = false;
 
-  public isLoggedIn: boolean = true;
-
-  login() {
-    this.isLoggedIn = true;
-    console.log('login');
-  }
-  
-  public logout() {
-    this.isLoggedIn = false;
-    console.log('logout');
-    confirm('Are you sure you want to logout?');
-  }
 }
